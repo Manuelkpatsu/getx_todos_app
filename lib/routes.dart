@@ -13,7 +13,7 @@ class AppRoutes {
 
   static final routes = [
     GetPage(name: SplashScreen.routeName, page: () => const SplashScreen()),
-    GetPage(name: TodoListScreen.routeName, page: () => const TodoListScreen()),
+    GetPage(name: TodoListScreen.routeName, page: () => TodoListScreen()),
     GetPage(name: LoginScreen.routeName, page: () => LoginScreen()),
     GetPage(name: RegisterScreen.routeName, page: () => RegisterScreen()),
     GetPage(name: EditTodoScreen.routeName, page: () => const EditTodoScreen()),

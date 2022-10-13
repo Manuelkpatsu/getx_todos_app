@@ -68,8 +68,6 @@ class RegisterScreen extends StatelessWidget {
                 CustomTextField(
                   hintText: '******',
                   obscureText: true,
-                  maxLength: 6,
-                  keyboardType: TextInputType.number,
                   textCapitalization: TextCapitalization.none,
                   controller: authController.passwordController,
                   validator: (value) => Validator.validatePassword(value),
