@@ -71,7 +71,7 @@ class TodoController extends GetxController {
       );
     } catch (e) {
       Get.snackbar(
-        'Adding New Update Error',
+        'Adding New Todo Error',
         e.toString(),
         snackPosition: SnackPosition.BOTTOM,
         duration: const Duration(seconds: 5),
@@ -97,7 +97,7 @@ class TodoController extends GetxController {
       );
     } catch (e) {
       Get.snackbar(
-        'Update Error',
+        'Updating Todo Error',
         e.toString(),
         snackPosition: SnackPosition.BOTTOM,
         duration: const Duration(seconds: 5),
@@ -123,7 +123,7 @@ class TodoController extends GetxController {
       );
     } catch (e) {
       Get.snackbar(
-        'Deletion Error',
+        'Deleting Todo Error',
         e.toString(),
         snackPosition: SnackPosition.BOTTOM,
         duration: const Duration(seconds: 5),

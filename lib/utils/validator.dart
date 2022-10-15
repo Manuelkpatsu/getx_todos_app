@@ -31,4 +31,24 @@ class Validator {
     }
     return null;
   }
+
+  static String? validateTitle(String? value) {
+    if (value == null || value.isEmpty) {
+      return '🚩 Please provide your title';
+    } else if (value.length < 3) {
+      return '🚩 Title must not be less than 3 chracters';
+    } else {
+      return null;
+    }
+  }
+
+  static String? validateNote(String? value) {
+    if (value == null || value.isEmpty) {
+      return '🚩 Please provide your note';
+    } else if (value.length < 3) {
+      return '🚩 Note must not be less than 3 chracters';
+    } else {
+      return null;
+    }
+  }
 }

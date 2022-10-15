@@ -65,6 +65,7 @@ class LoginScreen extends StatelessWidget {
                   textCapitalization: TextCapitalization.none,
                   validator: (value) => Validator.validateEmail(value),
                   controller: authController.emailController,
+                  inputAction: TextInputAction.next,
                 ),
                 const SizedBox(height: 16),
                 const Text(
@@ -82,6 +83,7 @@ class LoginScreen extends StatelessWidget {
                   controller: authController.passwordController,
                   textCapitalization: TextCapitalization.none,
                   validator: (value) => Validator.validatePassword(value),
+                  inputAction: TextInputAction.done,
                 ),
                 const SizedBox(height: 10),
                 Align(

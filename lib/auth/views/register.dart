@@ -54,6 +54,7 @@ class RegisterScreen extends StatelessWidget {
                   textCapitalization: TextCapitalization.none,
                   validator: (value) => Validator.validateEmail(value),
                   controller: authController.emailController,
+                  inputAction: TextInputAction.next,
                 ),
                 const SizedBox(height: 16),
                 const Text(
@@ -71,6 +72,7 @@ class RegisterScreen extends StatelessWidget {
                   textCapitalization: TextCapitalization.none,
                   controller: authController.passwordController,
                   validator: (value) => Validator.validatePassword(value),
+                  inputAction: TextInputAction.done,
                 ),
                 const SizedBox(height: 20),
                 CustomButton(

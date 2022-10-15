@@ -65,6 +65,7 @@ class ResetPasswordScreen extends StatelessWidget {
                   textCapitalization: TextCapitalization.none,
                   validator: (value) => Validator.validateEmail(value),
                   controller: authController.emailController,
+                  inputAction: TextInputAction.done,
                 ),
                 const SizedBox(height: 20),
                 CustomButton(
